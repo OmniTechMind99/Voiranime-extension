@@ -1,0 +1,15 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+
+ext {
+    projectName = 'VoirAnime'
+    lang = 'fr'
+    baseUrl = 'https://voir-anime.to'
+    isNsfw = false
+}
+
+dependencies {
+    implementation project(':core')
+    implementation project(':core-android')
+    implementation project(':source-api')
+}
